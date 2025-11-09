@@ -9,3 +9,9 @@ export const USER_LOGO =
 
 export const SEARCH_LOGO =
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQopjXWmPsDxRaTZqqREyLVJS-HtNH-5PrKPA&s";
+
+const VIDEO_API_KEY = "AIzaSyBWpDyVqj2StfUnEEr5uVZ0Ku48tBBojG8";
+
+export const VIDEO_API =
+  "https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,statistics&chart=mostPopular&maxResults=50&regionCode=IN&key=" +
+  VIDEO_API_KEY;

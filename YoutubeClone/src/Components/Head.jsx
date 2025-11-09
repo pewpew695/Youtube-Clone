@@ -1,4 +1,6 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { toggleMenu } from "../utils/appSlice";
 import {
   HAMBURGER_LOGO,
   SEARCH_LOGO,
@@ -7,10 +9,20 @@ import {
 } from "../utils/Constants";
 
 const Head = () => {
+  const dispatch = useDispatch();
+  const toggleMenuHandler = () => {
+    dispatch(toggleMenu());
+  };
+
   return (
     <div className="grid grid-flow-col p-2 m-2 shadow-lg">
       <div className="flex col-span-1 gap-3 items-center">
-        <img className="h-12" alt="Hamburger Icon" src={HAMBURGER_LOGO} />
+        <img
+          onClick={() => toggleMenuHandler()}
+          className="h-12 cursor-pointer"
+          alt="Hamburger Icon"
+          src={HAMBURGER_LOGO}
+        />
         <img className="h-12" alt="Website Icon" src={SITE_LOGO} />
       </div>
       <div className="col-span-10 flex items-center justify-center">
