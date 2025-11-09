@@ -19,3 +19,4 @@ Process:
 - Setup Redux store with appSlice which is used to manage display State of SideBar
 - Enabled Routing with react-router dom.
 - Clicking on VideoCard re-directs to WatchPage & clicking on Home option in SideBar re-directs to HomePage
+- Improved SearchBar using Suggestions API, Debouncing & using Redux store to save suggestions. This will avoid unecessary API calling
