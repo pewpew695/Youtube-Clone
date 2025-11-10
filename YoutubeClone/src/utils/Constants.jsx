@@ -18,3 +18,8 @@ export const VIDEO_API =
 
 export const SEARCH_SUGGESTIONS_API =
   "http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
+
+export const COMMENT_API =
+  "https://www.googleapis.com/youtube/v3/commentThreads?key=" +
+  VIDEO_API_KEY +
+  "&textFormat=plainText&part=snippet&maxResults=50&videoId=";

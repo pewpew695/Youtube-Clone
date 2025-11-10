@@ -24,7 +24,7 @@ const Head = () => {
   const searchCache = useSelector((store) => store.suggestion);
 
   useEffect(() => {
-    console.log(searchQuery);
+    // console.log(searchQuery);
 
     const timer = setTimeout(() => {
       if (searchCache[searchQuery]) {
@@ -42,7 +42,7 @@ const Head = () => {
   const getSearchSuggestions = async () => {
     const data = await fetch(SEARCH_SUGGESTIONS_API + searchQuery);
     const json = await data.json();
-    console.log(json);
+    // console.log(json);
     setSuggestions(json[1]);
     dispatch(
       cacheResults({
