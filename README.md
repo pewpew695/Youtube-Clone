@@ -21,3 +21,5 @@ Process:
 - Clicking on VideoCard re-directs to WatchPage & clicking on Home option in SideBar re-directs to HomePage
 - Improved SearchBar using Suggestions API, Debouncing & using Redux store to save suggestions. This will avoid unecessary API calling
 - Implemented Comments inside WatchPage, by fetching live data from Youtube Comments API
+- Implemented LiveChat feature in watchPage component
+- Improved overal UI of the webPage

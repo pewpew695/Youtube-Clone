@@ -23,3 +23,5 @@ export const COMMENT_API =
   "https://www.googleapis.com/youtube/v3/commentThreads?key=" +
   VIDEO_API_KEY +
   "&textFormat=plainText&part=snippet&maxResults=50&videoId=";
+
+export const LIVE_CHAT_COUNT = 20;

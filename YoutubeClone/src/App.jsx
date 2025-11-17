@@ -28,8 +28,12 @@ function App() {
   return (
     <Provider store={store}>
       <div className="app">
-        <Head />
-        <RouterProvider router={appRouter} />
+        <div className="fixed top-0 left-0 w-full z-50 bg-white">
+          <Head />
+        </div>
+        <div>
+          <RouterProvider router={appRouter} />
+        </div>
       </div>
     </Provider>
   );
