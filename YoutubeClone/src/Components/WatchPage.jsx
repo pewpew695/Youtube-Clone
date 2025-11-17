@@ -15,10 +15,10 @@ const WatchPage = () => {
   //   console.log(searchParams);
   return (
     <div className="flex flex-col lg:flex-row">
-      <div className="p-2 m-2 w-full lg:w-[70%]">
-        <div className="aspect-w-16 aspect-h-9 w-full">
+      <div className="p-2 m-2 w-[80%] lg:w-[70%]">
+        <div className="w-full">
           <iframe
-            className="w-full h-full rounded-lg"
+            className="w-full h-[600px] rounded-lg"
             src={"https://www.youtube.com/embed/" + searchParams.get("v")}
             title="YouTube video player"
             frameBorder="0"
